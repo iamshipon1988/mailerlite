@@ -1,0 +1,38 @@
+# Setup
+name:                MailerLite
+title:               MailerLite
+tagline:             Top secret project for MailerLite.
+author:              Sazzad Hossain
+author_email:        sazzad@sazzad.me
+url:                 http://localhost:4000
+baseurl:             ''
+permalink:           pretty
+exclude:             [README.markdown]
+analytics_id:        "UA-104952515-1"
+
+# SEO information
+seo:
+    description:    "Top secret project for MailerLite"
+    keywords:       "bootstrap, admin, theme, panel, administration, material"
+
+# Owner/author information
+owner:
+    name:           MailerLite
+    avatar:         logo.png
+    bio:            "Top secret project for MailerLite"
+    email:          sazzad@sazzad.me
+    twitter:        iamshipon1988
+    github:         iamshipon1988
+    instagram:      comingsoon
+    location:       "New York, NY"
+
+
+# Custom vars
+version:             0.1.0
+github:
+  repo:
+
+
+# Plugins
+plugins:
+- jekyll-sitemap
