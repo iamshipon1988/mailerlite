@@ -113,6 +113,7 @@ header {
         right: $padding;
         top: $padding;
         width: 200px;
+        max-width: 20%;
         height: calc(100% - (2*#{$padding}));
         outline: none;
         z-index: 2;
