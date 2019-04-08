@@ -14,7 +14,6 @@ $(document).ready(function() {
         inDuration: 1500,
         outDuration: 800,
         linkElement: '.animsition-link',
-        // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
         loading: true,
         loadingParentElement: 'body', //animsition wrapper element
         loadingClass: 'loading',
@@ -45,31 +44,6 @@ $(document).ready(function() {
     })
 });
 
-// Sidebar Toggle
-$('.menu-toggle').click(function(e) {
-    e.preventDefault();
-    $('main').toggleClass('sidebar-open');
-    $('body').toggleClass('sidebar-open sidebar-closed');
-});
-
-$('.offcanvas-toggle').click(function(e) {
-    e.preventDefault();
-    $('.offcanvas-menu').toggleClass('open');
-    //$(this).toggleClass('active').find('.feather').toggleClass('icon-x icon-settings');
-});
-
-// Dark Sidebar Toggle
-$('.js-darkSidebar').click(function(e) {
-    e.preventDefault();
-    $('.sidebar').toggleClass('sidebar-dark');
-});
-
-// Mobile Menu
-$('#mobileMenuButton').click( function(e) {
-   e.preventDefault();
-   $('#mobileMenu').slideToggle();
-});
-
 // Modal Video Autoplay
 function videoAutoplay() {
    var trigger = $("body").find('[data-toggle="modal"]');
@@ -85,26 +59,6 @@ function videoAutoplay() {
    });
 }
 videoAutoplay();
-
-// Forms
-$("input.jsNumeric").numeric();
-
-// Sidebar Menu Active State
-$(document).ready(function() {
-    var last=$.cookie('activeSidebarGroup');
-    if (last!=null) {
-        //remove default collapse settings
-        $("#sidebarCookie .collapse").removeClass('in');
-        //show the last visible group
-        $("#"+last).collapse("show");
-    }
-});
-
-//when a group is shown, save it as the active accordion group
-$("#sidebarCookie").bind('shown', function() {
-    var active=$("#sidebarCookie .in").attr('id');
-    $.cookie('activeSidebarGroup', active)
-});
 
 // Wow.js
 new WOW().init();

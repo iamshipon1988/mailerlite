@@ -1,5 +1,5 @@
 /*
-* Theme: Bootadmin
+* Theme: MailerLite
 * Author: Sazzad Hossain
 * Author URL: http://sazzad.me
 */
@@ -15,6 +15,116 @@
 /** Loader **/
 @import "components/loader";
 
+h1 {
+    font-size: $fontHeaderSize;
+}
+
+h2 {
+    font-size: $fontSizexLarge;
+}
+
+h3 {
+    font-size: $fontSizeLarge;
+}
+
+h4 {
+    font-size: $fontSize;
+}
+
+h5 {
+    font-size: $fontSizeSmall;
+}
+
+/** Header **/
+header {
+    background: $primaryColor;
+    color: white;
+
+    nav.navbar {
+        height: $navSize;
+        padding: 0;
+
+        .navbar-brand {
+            img {
+                width: 120px;
+            }
+        }
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: white;
+                }
+
+                &.active {
+                    .nav-link {
+                        color: white;
+                        font-weight: $fontBold;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-content {
+        padding-top: $inputSizeMd;
+        padding-bottom: .5*$inputSizeXl;
+
+        h1 {
+            font-weight: $fontLight;
+        }
+
+        h3 {
+            @include opacity(.8);
+        }
+    }
+}
+
+/** Sign Up Form **/
+.email-form {
+    position: relative;
+    background: #FFFFFF;
+    height: $inputSizeXl;
+    @include box-shadow($boxShadowLg);
+    @include transform(translateY(-50%));
+
+    input {
+        border: none;
+        outline: none;
+        display: block;
+        height: 100%;
+        line-height: 100%;
+        width: 100%;
+        font-size: $fontSizexLarge;
+        padding: 0 $padding-xl;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        @include placeholder {
+            font-weight: $fontLight;
+            font-style: italic;
+            color: $textColorLight;
+        }
+    }
+
+    button {
+        position: absolute;
+        right: $padding;
+        top: $padding;
+        width: 200px;
+        height: calc(100% - (2*#{$padding}));
+        outline: none;
+        z-index: 2;
+        background: $primaryColor;
+        @include border-radius(0);
+    }
+}
+
+/** Footer **/
+footer {
+    text-align: center;
+}
 
 
 @media (max-width: ($grid-md - 1px)) {

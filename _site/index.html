@@ -10,16 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>
         
-            Dashboard &middot; MailerLite
+            Newsletter &middot; MailerLite
         
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-    <script type="text/javascript">
-        var host = "bootadmin.org";
-        if ((host == window.location.host) && (window.location.protocol != "https:"))
-            window.location.protocol = "https";
-    </script>
 
     <!-- Le Meta Data -->
     <meta content="MailerLite" property="og:site_name">
@@ -51,7 +45,6 @@
     <!-- Le CSS
     ================================================== -->
     <link rel="stylesheet" href="/style/vendor/library.min.css">
-    <link rel="stylesheet" href="/style/vendor/jqueryui-flat/jquery-ui.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     
     
@@ -89,188 +82,81 @@
     <div class="loading-center"><img src="/images/loading/map.gif" alt="Loading" /></div>
 </div>
 <div class="page-container animsition">
-    <div id="dashboardPage">
-        
+    <div id="newsletterPage">
+        <header>
+    
 
-<!-- Main Menu -->
-<div class="topbar">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="/images/branding/logo-white.svg" alt="MailerLite" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log In</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Get MailerLite</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container header-content">
         <div class="row">
-            <div class="col-md-5 hidden-xs">
-                <div class="logo">
-                    <a href="/">
-                        <span class="logo-emblem"><img src="/images/boot.png" alt="BA" /></span>
-                        <span class="logo-full">Bootadmin</span>
-                    </a>
-                </div>
-                <a href="#" class="menu-toggle wave-effect">
-                    <i class="feather icon-menu"></i>
-                </a>
+            <div class="col-lg-7">
+                <h1 class="pt-5">Get exclusive marketing <strong>tips & tricks</strong> directly in your inbox.</h1>
+                <h3><em>All for one time fee of FREE 99. (It’s free. Seriously!)</em></h3>
             </div>
-            <div class="col-md-7 text-right">
-                <ul>
-                    <!-- Profile Menu -->
-                    <li class="btn-group user-account">
-                        <a href="javascript:;" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div class="user-content">
-                                <div class="user-name">Andrew Gill</div>
-                                <div class="user-plan">BeeBack Free Tier</div>
-                            </div>
-                            <div class="avatar">
-                                <img src="/images/demo/user.jpg" alt="profile" />
-                            </div>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a href="/account/profile" class="animsition-link dropdown-item wave-effect"><i class="feather icon-user"></i> Profile</a></li>
-                            <li><a href="/account/billing" class="animsition-link dropdown-item wave-effect"><i class="feather icon-dollar-sign"></i> Billing</a></li>
-                            <li><a href="/account/settings" class="animsition-link dropdown-item wave-effect"><i class="feather icon-settings"></i> Settings</a></li>
-                            <li><a href="/login" class="animsition-link dropdown-item wave-effect"><i class="feather icon-log-in"></i> Logout</a></li>
-                        </ul>
-                    </li>
-                    <!-- Offcanvas Menu -->
-                    <li>
-                        <a href="#" class="btn wave-effect offcanvas-toggle"><i class="feather icon-settings"></i></a>
-                    </li>
-                    <!-- Notification Menu -->
-                    <li class="btn-group notification">
-                        <a href="javascript:;" class="btn dropdown-toggle wave-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="feather icon-bell"><span class="notification-count">27</span></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li>
-                                <a href="#" class="wave-effect">
-                                    <span class="avatar">
-                                        <img src="/images/demo/profile.png" alt="Mr. Chu" />
-                                    </span>
-                                    <span class="name">Jas Gillionaire</span>
-                                    <span class="message">Like your post: “Contact Form 7 Multi-Step”</span>
-                                    <span class="time">45 min</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="wave-effect">
-                                    <span class="avatar">
-                                        <img src="/images/demo/user.jpg" alt="Andrew" />
-                                    </span>
-                                    <span class="name">Gurinder Singh</span>
-                                    <span class="message">Like your post: “Contact Form 7 Multi-Step”</span>
-                                    <span class="time">45 min</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="wave-effect">
-                                    <span class="avatar">
-                                        <img src="/images/demo/profile.png" alt="Mr. Chu" />
-                                    </span>
-                                    <span class="name">Andrew the Canadian</span>
-                                    <span class="message">Like your post: “Contact Form 7 Multi-Step”</span>
-                                    <span class="time">45 min</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="wave-effect">
-                                    <span class="avatar">
-                                        <img src="/images/demo/user.jpg" alt="Mr. Chu" />
-                                    </span>
-                                    <span class="name">Artsy Shohan</span>
-                                    <span class="message">Like your post: “Contact Form 7 Multi-Step”</span>
-                                    <span class="time">45 min</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="wave-effect">
-                                    <span class="avatar">
-                                        <img src="/images/demo/profile.png" alt="Mr. Chu" />
-                                    </span>
-                                    <span class="name">Sazzad Shammad</span>
-                                    <span class="message">Like your post: “Contact Form 7 Multi-Step”</span>
-                                    <span class="time">45 min</span>
-                                </a>
-                            </li>
-                            <li><a href="/notification" class="dropdown-item all-notifications wave-effect">See more messages <i class="feather icon-arrow-down"></i></a></li>
-                        </ul>
-                    </li>
-                    <li class="mobile-menu-toggle">
-                        <a href="#" class="menu-toggle wave-effect">
-                            <i class="feather icon-menu"></i>
-                        </a>
-                    </li>
-                </ul>
+            <div class="col-lg-4 offset-lg-1">
+                <img src="/images/demo/characters.png" alt="hi" />
             </div>
         </div>
     </div>
+</header>
+
+<div class="container">
+    <form class="email-form">
+        <input type="email" placeholder="yourname@example.com" aria-label="Search">
+        <button class="btn btn-success" type="submit"><i class="fas fa-search d-block d-sm-none"></i><span class="d-none d-sm-block">Sign Up</span></button>
+    </form>
 </div>
 
-<aside class="offcanvas-menu">
-    <div class="offcanvas-button">
-        <a href="#" class="btn wave-effect offcanvas-toggle font-20"><span aria-hidden="true">&times;</span></a>
+<section id="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                asdf
+            </div>
+            <div class="col-lg-7 offset-lg-1">
+                asdf
+            </div>
+        </div>
     </div>
-    <h5 class="offcanvas-title">List Group</h4>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Morbi leo risus</li>
-        <li class="list-group-item">Porta ac consectetur ac</li>
-        <li class="list-group-item">Vestibulum at eros</li>
-    </ul>
+</section>
 
-    <h5 class="offcanvas-title">List Group</h4>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-            Cras justo odio
-            <span class="badge badge-primary badge-pill">14</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-            Dapibus ac facilisis in
-            <span class="badge badge-primary badge-pill">2</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-            Morbi leo risus
-            <span class="badge badge-primary badge-pill">1</span>
-        </li>
-    </ul>
-
-    <h5 class="offcanvas-title">List Group Content</h4>
-    <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">List group item heading</h5>
-                <small>3 days ago</small>
-            </div>
-            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            <small>Donec id elit non mi porta.</small>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">List group item heading</h5>
-                <small class="text-muted">3 days ago</small>
-            </div>
-            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            <small class="text-muted">Donec id elit non mi porta.</small>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">List group item heading</h5>
-                <small class="text-muted">3 days ago</small>
-            </div>
-            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            <small class="text-muted">Donec id elit non mi porta.</small>
-        </a>
+<section id="happiness">
+    <div class="container">
+        <h1>Hello my beautiful people. I am you're one and only interwebs savior!</h1>
     </div>
-</aside>
-
-        <main>
-            <h1>Hello my beautiful people. I am you're one and only interwebs savior!</h1>
+</section>
 
 
-            <!-- Footer -->
+        <!-- Footer -->
 <footer>
-    <p>&copy; MailerLite. All Rights Reserved. <br />Designed and Developed by <a href="https://sazzad.me">Sazzad Hossain</a>.</p>
+    <p>&copy; MailerLite. All Rights Reserved. <br />Keyboard crafted by <a href="https://sazzad.me">Sazzad Hossain</a>.</p>
 </footer>
 
-        </main>
     </div>
-
 </div>
 
 
@@ -279,8 +165,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="/scripts/vendor/bootstrap.min.js"></script>
 <script src="/scripts/vendor/library.min.js"></script>
-
-
 
 <script src="/scripts/core/main.js"></script>
 

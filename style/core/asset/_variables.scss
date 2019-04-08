@@ -1,16 +1,16 @@
 .var {}
 
 // Fonts
-$fontSizexSmall:  10px;
-$fontSizeSmall:   13px;
-$fontSize:        15px;
-$fontSizeLarge:   20px;
-$fontSizexLarge:  24px;
-$fontHeaderSize:  38px;
+$fontSizexSmall:  .5rem;
+$fontSizeSmall:   .75rem;
+$fontSize:        1rem;
+$fontSizeLarge:   1.25rem;
+$fontSizexLarge:  2rem;
+$fontHeaderSize:  3rem;
 $fontPrimary:     system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 //$fontPrimary:     'Nunito', 'Helvetica Neue', 'Lucida Grande', Arial, Verdana, sans-serif;
 $fontHeader:      $fontPrimary;
-$fontLight:       lighter;
+$fontLight:       300;
 $fontNormal:      normal;
 $fontMedium:      500;
 $fontBold:        bold;
@@ -19,8 +19,7 @@ $letterSpacing:   0;
 $lineHeight:      1.47;
 
 // Sizes
-$sidebarSize:     265px;
-$navSize:         65px;
+$navSize:         80px;
 $navSizeMobile:   54px;
 $logoSize:        50px;
 $logoSizeMobile:  36px;
@@ -39,12 +38,12 @@ $grid-lg:         992px;
 $grid-xl:         1200px;
 $grid-xxl:        1400px;
 
-$inputSizeXl:     80px;
-$inputSizeLg:     60px;
-$inputSize:       50px;
-$inputSizeMd:     44px;
+$inputSizeXl:     100px;
+$inputSizeLg:     70px;
+$inputSize:       60px;
+$inputSizeMd:     50px;
 $inputSizeSm:     40px;
-$inputSizeXs:     35px;
+$inputSizeXs:     30px;
 $inputSizeXxs:    14px;
 
 // Colors
@@ -55,7 +54,7 @@ $green:           #2ecc71;
 $orange:          #d35400;
 
 $textColor:       #37474f;
-$textColorLight:  #76838f;
+$textColorLight:  #B1B1B1;
 $headerColor:     #1D2435;
 $textColorDark:   #2c398f;
 
@@ -70,9 +69,9 @@ $frameColor:      #E5F5FE;
 $overlayColor:    rgba(255,255,255,0.5);
 
 // Brand Colors
-$primaryColor:    $blue;
-$secondaryColor:  $red;
-$tirtiaryColor:   $green;
+$primaryColor:    #09c269;
+$secondaryColor:  #2d8cff;
+$tirtiaryColor:   #F65B74;
 
 // Sidebar Colors
 $sidebarDark:     #1C2A36;
@@ -88,7 +87,7 @@ $ltgreen:         #3bffb2;
 $pinkAlert:       #FAC0C0;
 
 $boxShadow:       0 2px 5px 0 rgba(62,57,107,.1);
-$boxShadowLg:     0 10px 45px 0 rgba(7,61,125,0.10);
+$boxShadowLg:     0 2px 4px 0 rgba(0,0,0,0.03), 0 7px 10px 0 rgba(0,0,0,0.05);
 $boxShadowSolid:  4px 4px 0px rgba(34, 45, 125, 0.1);
 $boxShadowHover:  0 14px 24px rgba(62,57,107,.1);
 $boxShadowCard:   rgba(45,45,45,0.05) 0px 2px 2px, rgba(49,49,49,0.05) 0px 4px 4px, rgba(42,42,42,0.05) 0px 8px 8px, rgba(32,32,32,0.05) 0px 16px 16px, rgba(49,49,49,0.05) 0px 32px 32px;
