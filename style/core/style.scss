@@ -102,21 +102,23 @@ header {
             color: $textColorLight;
         }
 
-        &:focus {
-            @include box-shadow($boxShadowHover);
-            @include transform(scale(1.04));
-            @include transition(.2s all ease-in);
-
-            ~ button {
-                font-weight: $fontBold;
-                right: 0;
+        @media (min-width: ($grid-md)) {
+            &:focus {
+                @include box-shadow($boxShadowHover);
                 @include transform(scale(1.04));
                 @include transition(.2s all ease-in);
-            }
 
-            &:invalid {
                 ~ button {
-                    background: $tirtiaryColor;
+                    font-weight: $fontBold;
+                    right: 0;
+                    @include transform(scale(1.04));
+                    @include transition(.2s all ease-in);
+                }
+
+                &:invalid {
+                    ~ button {
+                        background: $tirtiaryColor;
+                    }
                 }
             }
         }
