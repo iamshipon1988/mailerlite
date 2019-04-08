@@ -2,13 +2,12 @@
 
 // Fonts
 $fontSizexSmall:  .5rem;
-$fontSizeSmall:   .75rem;
-$fontSize:        1rem;
+$fontSizeSmall:   .9rem;
+$fontSize:        1.05rem;
 $fontSizeLarge:   1.25rem;
 $fontSizexLarge:  2rem;
-$fontHeaderSize:  3rem;
-$fontPrimary:     system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-//$fontPrimary:     'Nunito', 'Helvetica Neue', 'Lucida Grande', Arial, Verdana, sans-serif;
+$fontHeaderSize:  2.75rem;
+$fontPrimary:     'Poppins', system-ui, -apple-system, system-ui, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 $fontHeader:      $fontPrimary;
 $fontLight:       300;
 $fontNormal:      normal;
@@ -53,10 +52,10 @@ $yellow:          #f1c40f;
 $green:           #2ecc71;
 $orange:          #d35400;
 
-$textColor:       #37474f;
+$textColor:       #757575;
 $textColorLight:  #B1B1B1;
-$headerColor:     #1D2435;
-$textColorDark:   #2c398f;
+$headerColor:     #37474f;
+$textColorDark:   #37474f;
 
 $white:           #FFFFFF;
 $bodyColor:       #F5F7FA;
