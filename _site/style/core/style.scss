@@ -166,12 +166,168 @@ section {
 }
 
 /** Topics **/
-.box {
+#topics {
+    .card {
+        background: white;
+        padding: $padding-lg;
+        margin: $padding 0;
+        border: none;
+        @include border-radius(6px);
+        @include box-shadow($boxShadowLg);
+        @include transition(.2s all ease-in);
+
+        .card-body {
+            padding: 0;
+            background: none;
+            border: none;
+
+            .card-title {
+                margin-bottom: $padding-lg;
+
+                h4, h5 {
+                    margin: 0;
+                }
+            }
+        }
+
+        .card-header,
+        .card-footer {
+            padding: 0;
+            background: none;
+        }
+
+        &:hover {
+            @include box-shadow($boxShadowHover);
+            @include transition(.2s all ease-in);
+        }
+    }
+}
+
+/** Topics **/
+#topics {
+    position: relative;
+    padding-bottom: 7*$padding-xl;
+
+    .curve {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin-bottom: -1px;
+        pointer-events: none;
+        background-repeat-y: no-repeat;
+        background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyNTBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik0wIDE0MGgxMjgwQzU3My4wOCAxNDAgMCAwIDAgMHoiLz48L2c+PC9zdmc+);
+        background-size: 100% 250px;
+        bottom: 0;
+        height: 250px;
+        z-index: 1;
+        transform: rotateY(180deg);
+    }
+}
+
+/** Testimonial **/
+#testimonial {
     background: white;
-    padding: $padding-lg;
-    margin: $padding 0;
-    @include border-radius(6px);
-    @include box-shadow($boxShadowLg);
+    //padding-bottom: 3*$padding-xl;
+
+    .testimonial-image {
+        width: auto;
+        max-width: initial;
+        @include opacity(0);
+    }
+
+    blockquote {
+        font-size: $fontSize;
+        font-style: italic;
+        font-weight: $fontLight;
+        color: #8D88A5;
+        line-height: 2.25;
+        background: white;
+        padding: $padding $padding $padding 0;
+    }
+
+    .testimonial-cite {
+        h2 {
+            font-style: italic;
+        }
+
+        h4 {
+            color: $tirtiaryColor;
+        }
+    }
+
+    @media (min-width: ($grid-xl)) {
+        background: white url('../../images/demo/testimonial.png') no-repeat center right;
+    }
+}
+
+/** Past Mail **/
+#pastMail {
+    .news-item {
+        position: relative;
+        margin: $padding auto;
+        padding: $padding-xl $padding-xl $padding-xl 150px;
+        background: white;
+        text-align: left;
+        @include border-radius(4px);
+        @include transition(all 200ms ease-in);
+        @include box-shadow($boxShadowLg);
+
+        .date {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 150px;
+            max-width: 100%;
+            text-align: center;
+            @include transform(translateY(-50%));
+
+            h4 {
+                margin: 0;
+            }
+
+            h1 {
+                color: $primaryColor;
+                margin: 0;
+            }
+        }
+
+        h3 {
+            font-size: $fontSize;
+            text-align: left;
+            font-weight: $fontBold;
+        }
+
+        p {
+            line-height: 1.47;
+            margin: 0;
+            text-align: left;
+            font-weight: $fontNormal;
+            font-size: $fontSize;
+            color: $textColorLight;
+        }
+
+        &:hover {
+            background: $primaryColor;
+            color: white;
+            @include transform(translate(0, -3px));
+            @include box-shadow($boxShadowHover);
+            @include transition(all 200ms ease-in);
+
+            h3 {
+                color: white;
+            }
+
+            p {
+                color: white;
+            }
+
+            .date h1 {
+                color: white !important;
+            }
+        }
+    }
 }
 
 
