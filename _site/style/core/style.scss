@@ -223,6 +223,35 @@ section {
         z-index: 1;
         @include transform(rotateY(180deg));
     }
+
+    .card {
+        border-bottom: 3px solid transparent;
+        height: 100%;
+
+        .card-title {
+            .icon {
+                float: left;
+                width: $inputSizeMd;
+                height: $inputSizeMd;
+                margin-right: $padding;
+                font-size: $fontSizexLarge;
+                color: $primaryColor;
+                text-align: center;
+            }
+
+            h4 {
+                padding-top: $padding-xs;
+            }
+
+            h5 {
+                color: $textColorLight;
+            }
+        }
+
+        &:hover {
+            border-color: $primaryColor;
+        }
+    }
 }
 
 /** Testimonial **/
