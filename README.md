@@ -11,3 +11,6 @@ I took the basic styles of your website and added a few extra elements to help i
 - I use my own variables and mixins files to make it easier for me to work with. But the bootstrap ones can be used in it's place.
 - Using FontAwesome free, but pro should be used. Using free since this is a public project.
 - Text being used on the pages are all dummy. Should be replaced with real content.
+
+# Jekyll
+This project was built using Jekyll (https://jekyllrb.com/). To compile project run `jekyll serve` command. It uses sitemap plugin for Jekyll. Make sure to have that installed.
