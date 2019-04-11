@@ -65,7 +65,8 @@ header {
         }
 
         @media (max-width: ($grid-md - 1px)) {
-            padding-top: $padding;
+            padding-top: 1.5$padding-xl;
+            padding-bottom: 3*$padding-xl;
 
             h1 {
                 padding-top: 0;
@@ -123,6 +124,7 @@ header {
                 }
 
                 @include placeholder {
+                    font-size: $fontSizeSmall;
                     color: lighten($textColorLight, 20%);
                     @include transition(.2s all ease-in);
                 }
@@ -148,7 +150,7 @@ header {
         height: $inputSizeLg;
 
         input {
-            font-size: $fontSizeLarge;
+            font-size: $fontSize;
             padding: 0 $padding;
         }
     }
@@ -258,6 +260,16 @@ section {
             border-color: $primaryColor;
         }
     }
+
+    @media (max-width: ($grid-md - 1px)) {
+        padding-bottom: 4*$padding-xl;
+
+        .curve {
+            background-size: 100% 100px;
+            bottom: 0;
+            height: 100px;
+        }
+    }
 }
 
 /** Testimonial **/
@@ -297,6 +309,11 @@ section {
 
     @media (min-width: ($grid-xl)) {
         background: white url('../../images/demo/testimonial.png') no-repeat center right;
+    }
+
+    @media (max-width: ($grid-md - 1px)) {
+        padding-top: 2*$padding-xl;
+        padding-bottom: 2*$padding-xl;
     }
 }
 
@@ -389,6 +406,14 @@ section {
             .date h1 {
                 color: white !important;
             }
+        }
+    }
+
+    @media (max-width: ($grid-md - 1px)) {
+        .curve {
+            background-size: 100% 100px;
+            bottom: 0;
+            height: 100px;
         }
     }
 }
