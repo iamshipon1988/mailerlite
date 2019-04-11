@@ -100,6 +100,7 @@ header {
             font-weight: $fontLight;
             font-style: italic;
             color: $textColorLight;
+            @include transition(.2s all ease-in);
         }
 
         @media (min-width: ($grid-md)) {
@@ -119,6 +120,11 @@ header {
                     ~ button {
                         background: $tirtiaryColor;
                     }
+                }
+
+                @include placeholder {
+                    color: lighten($textColorLight, 20%);
+                    @include transition(.2s all ease-in);
                 }
             }
         }
