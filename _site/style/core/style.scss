@@ -124,7 +124,6 @@ header {
                 }
 
                 @include placeholder {
-                    font-size: $fontSizeSmall;
                     color: lighten($textColorLight, 20%);
                     @include transition(.2s all ease-in);
                 }
